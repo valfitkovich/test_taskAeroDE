@@ -1,10 +1,8 @@
     # test task for AeroDE
 
-Краткое описание вашего проекта и его основных целей.
-
 ## Основные возможности
 
-- Автоматическое создание базы данных с уникальным именем.
+- Автоматическое создание базы данных.
 - Загрузка данных из различных API в созданную базу данных.
 - Оркестрация задач с использованием `cron`.
 
@@ -24,7 +22,19 @@ pip install -r requirements.txt
 ```bash
 python create_database.py
 ```
-### 4.1 Оркестрация задач:
+### 4.Добавьте свои креды в main.py:
+```python
+ def wrapper(*args, **kwargs):
+        conn = psycopg2.connect(
+            dbname="test_task",
+            user="",
+            password="",
+            host="localhost",
+            port="5432"
+        )
+```
+
+### 5. Оркестрация задач:
 ```bash
 chmod +x setup_cron.sh
 ./setup_cron.sh
