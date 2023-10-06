@@ -37,7 +37,7 @@ def execute_sql_files_in_database(db_name, user, password, host='localhost', por
 
 
 if __name__ == "__main__":
-    DB_NAME = "test_task_6"
+    DB_NAME = "test_task"
 
     USER = input("Please enter your PostgreSQL username: ")
     PASSWORD = getpass.getpass("Please enter your PostgreSQL password: ")
