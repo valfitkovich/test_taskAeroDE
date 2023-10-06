@@ -1,4 +1,4 @@
-    # Название вашего проекта
+    # test task for AeroDE
 
 Краткое описание вашего проекта и его основных целей.
 
@@ -9,11 +9,11 @@
 - Оркестрация задач с использованием `cron`.
 
 ## Настройка и установка
-
+    
 ### 1. Клонирование репозитория:
 
 ```bash
-git clone <URL вашего репозитория на GitHub>
+git clone <https://github.com/valfitkovich/test_taskAeroDE>
 cd <Имя директории вашего репозитория>
 ```
 ### 2. Установка зависимостей:
@@ -29,3 +29,4 @@ python create_database.py
 chmod +x setup_cron.sh
 ./setup_cron.sh
 ```
+
